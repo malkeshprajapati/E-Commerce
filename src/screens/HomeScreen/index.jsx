@@ -80,6 +80,7 @@ function HomeScreen() {
         selectedFilter={cartState.cartSelectedFilter}
         handleShortlistedProductRemove={handleShortlistedProductRemove}
         handleCartCategoryChange={handleCartCategoryChange}
+        handleCartToggle={handleCartToggle}
       />
     </>
   );

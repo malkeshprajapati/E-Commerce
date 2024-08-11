@@ -9,6 +9,7 @@ function Cart({
   selectedFilter,
   handleShortlistedProductRemove,
   handleCartCategoryChange,
+  handleCartToggle,
 }) {
   return (
     <div
@@ -22,6 +23,7 @@ function Cart({
           count={count}
           selectedFilter={selectedFilter}
           handleCartCategoryChange={handleCartCategoryChange}
+          handleCartToggle={handleCartToggle}
         />
         <CartBody
           shortlistedItems={shortlistedItems}

@@ -153,11 +153,12 @@ function useHomeScreen() {
       ...prevState,
       totalCount: prevState.totalCount + 1,
       cartSelectedFilter: selectedFilter.products,
-      isOpen: !prevState.shortlistedItems[selectedFilter.products]?.length
-        ? true
-        : prevState.shortlistedItems[selectedFilter.products]
-        ? false
-        : true,
+      isOpen: true, // opens on all cases
+      // isOpen: !prevState.shortlistedItems[selectedFilter.products]?.length
+      //   ? true
+      //   : prevState.shortlistedItems[selectedFilter.products]
+      //   ? false
+      //   : true, // opens only when particular category cart is empty
       shortlistedItems: {
         ...prevState.shortlistedItems,
         [selectedFilter.products]: [
